@@ -1,18 +1,2 @@
-@font-face {
-  font-family: 'Blanka';
-  font-weight: bolder;
-  src: url('./fonts/Blanka-Regular.otf');
-}
-
-body {
-  margin: 0;
-  font-family: 'Blanka', sans-serif;
-  letter-spacing: 3px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import './sass/variables';
+@import './sass/basic';

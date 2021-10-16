@@ -1,9 +1,11 @@
 import './app.scss'
 
+import Header from './components/Header/Header'
+
 function App() {
   return (
     <div className='App'>
-      <h1 className='clr-white'> Electron / React Desktop Allication!! </h1>
+      <Header />
     </div>
   )
 }
