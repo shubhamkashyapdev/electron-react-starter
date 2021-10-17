@@ -20,6 +20,10 @@ import Previous from './Pages/Hooks/Previous/Previous'
 import StateWithHistory from './Pages/Hooks/StateWithHistory/StateWithHistory'
 import Async from './Pages/Hooks/Async/Async'
 import Fetch from './Pages/Hooks/Fetch/Fetch'
+import JSScript from './Pages/Hooks/JSScript/JSScript'
+import EventListener from './Pages/Hooks/EventListener/EventListener'
+import OnScreen from './Pages/Hooks/OnScreen/OnScreen'
+import WindowSize from './Pages/Hooks/WindowSize/WindowSize'
 
 function App() {
   return (
@@ -31,7 +35,7 @@ function App() {
           <Route exact path='/' component={PasswordManager} />
           <Route exact path='/img-manager' component={ImagesManager} />
           <Route exact path='/vdo-manager' component={VideosManager} />
-          <Route exact path='/hook' component={Fetch} />
+          <Route exact path='/hook' component={WindowSize} />
         </Switch>
       </Router>
     </div>
