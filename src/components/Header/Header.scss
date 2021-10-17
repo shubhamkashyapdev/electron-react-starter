@@ -1,54 +1,19 @@
 @import '../../sass/variables.scss';
 .header {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav_bar {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+  align-items: baseline;
+  margin: 10px 0;
 }
-
-.header-box {
-  position: relative;
-  padding: 15px 20px;
+.logo {
+  flex: 1;
+}
+.nav_list {
+  flex: 5;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.header-box h3 {
-  font-size: 30px;
-  opacity: 0.99;
-  z-index: 5;
-  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.25);
-  color: white;
-}
-
-.header-box::before {
-  content: '';
-  position: absolute;
-  width: 40px;
-  height: 400%;
-  background-image: linear-gradient($gradient-clr1, $gradient-clr2);
-  z-index: 1;
-  animation: spin 3s linear infinite;
-}
-.header-box::after {
-  content: '';
-  position: absolute;
-  width: 98%;
-  height: 96%;
-  background-color: $primary-clr;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-between;
 }

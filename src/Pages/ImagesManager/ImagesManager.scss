@@ -1,0 +1,6 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.images_manager {
+  @include flex-center;
+}

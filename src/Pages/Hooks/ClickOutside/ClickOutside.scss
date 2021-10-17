@@ -1,0 +1,14 @@
+@import '../../../sass/variables';
+@import '../../../sass/mixins';
+@import '../../../sass/global';
+
+.modal {
+  background-color: $gradient-clr2;
+  color: $white-clr;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  display: flex;
+}

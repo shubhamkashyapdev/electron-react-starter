@@ -1,0 +1,11 @@
+@import './variables';
+@import './mixins';
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  all: unset;
+  padding: 5px 12px;
+}

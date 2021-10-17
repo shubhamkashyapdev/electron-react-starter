@@ -1,0 +1,6 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.videos_manager {
+  @include flex-center;
+}
