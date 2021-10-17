@@ -6,22 +6,6 @@
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  font-family: 'Blanka', sans-serif;
-  letter-spacing: 3px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $primary-clr;
-  color: white;
-  box-sizing: border-box;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 a {
   text-decoration: none;
 }

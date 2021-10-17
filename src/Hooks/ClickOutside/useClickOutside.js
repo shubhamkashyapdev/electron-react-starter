@@ -1,11 +1,11 @@
-import React from 'react'
-const useEventListener = () => {}
+import useEventListener from '../EventListener/EventListener'
 
-export default function (ref, cb) {
+export default function useClickOutside(ref, cb) {
   useEventListener(
     'click',
     (e) => {
-      if (ref.current === null || ref.current.contains(e.target)) return cb(e)
+      if (ref.current == null || ref.current.contains(e.target)) return
+      cb(e)
     },
     document
   )

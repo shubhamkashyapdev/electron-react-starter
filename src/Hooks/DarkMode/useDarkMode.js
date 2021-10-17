@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-function useMediaQuery() {}
-function useLocalStorage() {}
+import useMediaQuery from '../MediaQuery/useMediaQuery'
+import { useLocalStorage } from '../Storage/useStorage'
 
 export default function useDarkMode() {
   const [darkMode, setDarkMode] = useLocalStorage('useDarkMode')

@@ -12,6 +12,7 @@ function useStorage(key, defaultValue, storageObject) {
   const [value, setValue] = useState(() => {
     const jsonValue = storageObject.getItem(key)
     if (jsonValue != null) return JSON.parse(jsonValue)
+
     if (typeof initialValue === 'function') {
       return defaultValue()
     } else {
@@ -21,11 +22,12 @@ function useStorage(key, defaultValue, storageObject) {
 
   useEffect(() => {
     if (value === undefined) return storageObject.removeItem(key)
-    storageObject.setItem(key, JOSN.stringify(value))
+    storageObject.setItem(key, JSON.stringify(value))
   }, [key, value, storageObject])
 
   const remove = useCallback(() => {
     setValue(undefined)
-  })
+  }, [])
+
   return [value, setValue, remove]
 }

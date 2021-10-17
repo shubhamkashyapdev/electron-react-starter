@@ -1,2 +1,14 @@
 @import './sass/variables';
 @import './sass/basic';
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0;
+  font-family: $primary-font, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $primary-clr;
+  color: white;
+  box-sizing: border-box;
+}

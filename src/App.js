@@ -24,6 +24,11 @@ import JSScript from './Pages/Hooks/JSScript/JSScript'
 import EventListener from './Pages/Hooks/EventListener/EventListener'
 import OnScreen from './Pages/Hooks/OnScreen/OnScreen'
 import WindowSize from './Pages/Hooks/WindowSize/WindowSize'
+import MediaQuery from './Pages/Hooks/MediaQuery/MediaQuery'
+import StateWithValidation from './Pages/Hooks/StateWithValidation/StateWithValidation'
+import Size from './Pages/Hooks/Size/Size'
+import CopyToClipboardComponent from './Pages/Hooks/CopyToClipboard/CopyToCllipboard'
+import Cookies from './Pages/Hooks/ManageCookies/Cookies'
 
 function App() {
   return (
@@ -35,7 +40,7 @@ function App() {
           <Route exact path='/' component={PasswordManager} />
           <Route exact path='/img-manager' component={ImagesManager} />
           <Route exact path='/vdo-manager' component={VideosManager} />
-          <Route exact path='/hook' component={WindowSize} />
+          <Route exact path='/hook' component={Cookies} />
         </Switch>
       </Router>
     </div>

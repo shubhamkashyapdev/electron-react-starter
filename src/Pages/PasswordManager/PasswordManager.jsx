@@ -4,14 +4,25 @@ import PasswordField from '../../components/PasswordManager/PasswordField/Passwo
 import './PasswordManager.scss'
 
 // hooks //
+import useCopyToClipboard from '../../ProjectHooks/useCopyToClipboard'
 
 const PasswordManager = ({ passwords }) => {
+  const [copyToClipboard, { success }] = useCopyToClipboard()
   return (
     <div className='password_manager'>
-      {/* {passwords.map((passsword) => (
-        <div>{password.password}</div>
-      ))} */}
-      <h1>Password Manager</h1>
+      {passwords.map((item) => (
+        <>
+          <div className='item_container'>
+            Title: {item.title}, Password:{item.password}
+          </div>
+          <button
+            onClick={() => copyToClipboard(item.password)}
+            className='btn'
+          >
+            {success ? 'Coppied' : 'Copy'}
+          </button>
+        </>
+      ))}
     </div>
   )
 }

@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react'
 import './ClickOutside.scss'
 // hook //
 import useClickOutside from '../../../Hooks/ClickOutside/useClickOutside.js'
-import BorderAnim from '../../../components/BorderAnim/BorderAnim'
 
 const ClickOutside = () => {
   const [open, setOpen] = useState(true)
@@ -14,9 +13,6 @@ const ClickOutside = () => {
   return (
     <div className='click_outside'>
       <div className='center'>
-        {/* <BorderAnim>
-        <button>OPEN</button>
-      </BorderAnim> */}
         <button>OPEN</button>
       </div>
       <div
