@@ -16,6 +16,10 @@ import Timeout from './Pages/Hooks/Timeout/Timeout'
 import Debounce from './Pages/Hooks/Debounce/Debounce'
 import UpdateEffect from './Pages/Hooks/UpdateEffect/UpdateEffect'
 import Array from './Pages/Hooks/Array/Array'
+import Previous from './Pages/Hooks/Previous/Previous'
+import StateWithHistory from './Pages/Hooks/StateWithHistory/StateWithHistory'
+import Async from './Pages/Hooks/Async/Async'
+import Fetch from './Pages/Hooks/Fetch/Fetch'
 
 function App() {
   return (
@@ -27,7 +31,7 @@ function App() {
           <Route exact path='/' component={PasswordManager} />
           <Route exact path='/img-manager' component={ImagesManager} />
           <Route exact path='/vdo-manager' component={VideosManager} />
-          <Route exact path='/hook' component={Array} />
+          <Route exact path='/hook' component={Fetch} />
         </Switch>
       </Router>
     </div>
