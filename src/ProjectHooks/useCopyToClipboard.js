@@ -11,5 +11,5 @@ export default function useCopyToClipboard() {
     setSuccess(result)
   }
 
-  return [copyToClipboard, { value, success }]
+  return [copyToClipboard, { value, success, setSuccess }]
 }

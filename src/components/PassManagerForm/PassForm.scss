@@ -1,0 +1,26 @@
+@import '../../sass/variables';
+@import '../../sass/mixins';
+
+.pass_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+
+  .input {
+    font-family: $primary-font;
+    padding: 8px 30px;
+    background-color: lighten($primary-clr, 5%);
+    border: 2px solid $gradient-clr1;
+  }
+  .input_title {
+    margin-right: 10px;
+  }
+  .btn {
+    @include btn-outline;
+    margin-left: 10px;
+    span {
+      margin-left: 5px;
+    }
+  }
+}
